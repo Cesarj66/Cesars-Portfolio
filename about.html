@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cesar's Portfolio</title>
+  <link rel="icon" href="/img/home/group24.svg">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&family=Montserrat:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+  <!-- Creates a navigation bar for the page and linking each html page together -->
+  <header class="bg-gray-900">
+    <nav
+      class="flex items-center justify-between h-24 bg-gray-900 w-full z-20 top-0 start-0 border-b border-gray-900 dark:border-gray-900 nav-links">
+      <div class="flex items-center justify-center mx-auto">
+        <button data-collapse-toggle="navbar-sticky" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:focus:ring-gray-600 ml-auto"
+          aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse ml-auto">
+          <div class="hidden w-full md:flex md:w-auto" id="navbar-sticky">
+            <ul
+              class="flex flex-col p-4 mt-96 font-medium border border-gray-900 rounded-lg bg-gray-900 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-gray-900 dark:bg-gray-900 dark:border-gray-700">
+              <li>
+                <a href="index.html"
+                  class="block py-2 px-3 text-gray-900 md:bg-transparent md:text-gray-900 md:p-0 dark:text-gray-900"
+                  aria-current="page">Home</a>
+              </li>
+              <li class="relative group">
+                <a href="projects.html"
+                  class="md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 md:dark:hover:bg-transparent">
+                  Projects
+                </a>
+              </li>
+              <li class="relative group">
+                <a href="exercises.html"
+                  class="md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 md:dark:hover:bg-transparent">
+                  Skills
+                </a>
+              </li>
+              <li>
+                <a href="about.html"
+                  class="md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 md:dark:hover:bg-transparent">
+                  About Me
+                </a>
+              </li>
+              <li>
+                <a href="resources.html"
+                  class="md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 md:dark:hover:bg-transparent">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- About page section -->
+  <section class="flex items-center justify-center bg-stone-100 font-poppins dark:bg-gray-800 pt-[250px] pb-[100px]">
+    <!-- Adjust the pt-[100px] value to match the height of your navbar -->
+    <div class="max-w-4xl mx-auto px-4 lg:px-6 h-full flex flex-col justify-center">
+      <div class="px-4 md:text-center ">
+        <p class="mt-0 mb-2 text-lg font-semibold text-blue-500 dark:text-gray-400 ">
+          About Us
+        </p>
+        <h2 class="pb-2 text-2xl font-bold text-gray-800 md:text-4xl dark:text-gray-300">
+          What we do
+        </h2>
+        <div class="flex w-32 mt-1 mb-6 overflow-hidden rounded md:mx-auto md:mb-14">
+          <div class="flex-1 h-2 bg-blue-200">
+          </div>
+          <div class="flex-1 h-2 bg-blue-400">
+          </div>
+          <div class="flex-1 h-2 bg-blue-300">
+          </div>
+        </div>
+      </div>
+      <div class="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
+
+      </div>
+      <div class="flex flex-col justify-center items-center w-full px-4 mb-10  lg:mb-0">
+        <div class="w-full text-left">
+          <p class="mb-4 text-base leading-7 text-gray-500 dark:text-gray-400">Olympia is a classroom project designed
+            by CSU Fullerton students Cesar Jasso, Nicholas Reeves, and Hao Thai. Olympia is coded primarily using
+            HTML5, CSS, and Javascript, and was built from the ground up over the course of one semester.</p>
+          <h2
+            class="py-3 pl-2 mb-4 text-2xl font-bold text-gray-700 border-l-4 border-blue-500 dark:border-blue-400 dark:text-gray-300">
+            Our Mission
+          </h2>
+          <p class="mb-4 text-base leading-7 text-gray-500 dark:text-gray-400">
+            At Olympia, we are dedicated to helping everyone find the workout routine that best fits their own
+            lifestyle. Whether it's the occasional jog, or a week straight of pushing yourself to the limit, we're
+            here to help you become the best version of yourself you can be.
+          </p>
+        </div>
+      </div>
+
+
+    </div>
+
+  </section>
+
+  <!-- Cards -->
+  <div class=" flex flex-col justify-center bg-stone-100 font-poppins dark:bg-gray-800 w-screen m-0 p-0 pb-[50px]">
+    <div class="px-4 md:text-center ">
+      <p class="mt-0 mb-2 text-lg font-semibold text-blue-500 dark:text-gray-400 ">
+        Connect with Us!
+      </p>
+    </div>
+  </div>
+  <section class="grid grid-cols-5 gap-4 mx-auto bg-stone-100 font-poppins dark:bg-gray-800 pb-[100px]">
+    <!-- Hao Thai -->
+    <div
+      class="col-start-2 col-span-1 p-6 flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100">
+      <img src="about-img/linkedln_hao.svg" alt=""
+        class="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square">
+      <div class="space-y-4 text-center divide-y dark:divide-gray-700">
+        <div class="my-2 space-y-1">
+          <h2 class="text-xl font-semibold sm:text-2xl">Hao Thai</h2>
+          <p class="px-5 text-xs sm:text-base dark:text-gray-400"></p>
+        </div>
+        <div class="flex justify-center pt-2 space-x-4 align-center">
+          <a rel="noopener noreferrer" href="https://github.com/Haothai1" aria-label="GitHub"
+            class="p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-400 fa-brands fa-github" target="_blank">
+
+          </a>
+          <a rel="noopener noreferrer" href="https://discordapp.com/users/699493335131488256" aria-label="Discord"
+            class="p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-400 fa-brands fa-discord" target="_blank">
+
+          </a>
+          <a rel="noopener noreferrer" href="https://www.linkedin.com/in/haothai/" aria-label="Linkedin"
+            class="p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-400 fa fa-linkedin-square" target="_blank">
+
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Cesar Jasso -->
+    <div
+      class="col-span-1 p-6 flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100">
+      <img src="about-img/linkedln_cesar.svg" alt=""
+        class="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square">
+      <div class="space-y-4 text-center divide-y dark:divide-gray-700">
+        <div class="my-2 space-y-1">
+          <h2 class="text-xl font-semibold sm:text-2xl">Cesar Jasso</h2>
+          <p class="px-5 text-xs sm:text-base dark:text-gray-400"></p>
+        </div>
+        <div class="flex justify-center pt-2 space-x-4 align-center">
+          <a rel="noopener noreferrer" href="https://github.com/Cesarj66" aria-label="GitHub"
+            class="p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-400 fa-brands fa-github" target="_blank">
+
+          </a>
+          <a rel="noopener noreferrer" href="https://discordapp.com/users/879850197184815225" aria-label="Discord"
+            class="p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-400 fa-brands fa-discord" target="_blank">
+
+          </a>
+          <a rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/cesar-jasso-9852942a3/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+            aria-label="Linkedin"
+            class="p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-400 fa fa-linkedin-square" target="_blank">
+
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Nicholas Reeves -->
+    <div
+      class="col-span-1 p-6 flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100">
+      <img src="about-img/linkedln_nick.svg" alt=""
+        class="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square">
+      <div class="space-y-4 text-center divide-y dark:divide-gray-700">
+        <div class="my-2 space-y-1">
+          <h2 class="text-xl font-semibold sm:text-2xl">Nicholas Reeves</h2>
+          <p class="px-5 text-xs sm:text-base dark:text-gray-400"></p>
+        </div>
+        <div class="flex justify-center pt-2 space-x-4 align-center">
+          <a rel="noopener noreferrer" href="https://github.com/Nickel-Nickel" aria-label="GitHub"
+            class="p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-400 fa-brands fa-github" target="_blank">
+
+          </a>
+          <a rel="noopener noreferrer" href="https://discordapp.com/users/382656027562082305" aria-label="Discord"
+            class="p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-400 fa-brands fa-discord" target="_blank">
+
+          </a>
+          <a rel="noopener noreferrer" href="https://www.linkedin.com/in/reevesnick/" aria-label="Linkedin"
+            class="p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-400 fa fa-linkedin-square" target="_blank">
+
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- <img src="path-to-your-image.jpg" alt="photo"> -->
+
+
+
+  <!-- <h2>Meet the Team</h2>
+  <div class="team-member">
+    <img src="team-member1.jpg" alt="Name">
+    <p>Name</p>
+    <p>Position</p>
+  </div>
+  <div class="team-member">
+    <img src="team-member1.jpg" alt="Name">
+    <p>Name</p>
+    <p>Position</p>
+  </div>
+  <div class="team-member">
+    <img src="team-member1.jpg" alt="Name">
+    <p>Name</p>
+    <p>Position</p>
+  </div> -->
+
+
+
+  <!-- main footer -->
+  <footer class="gx ua ark asy aus chh ddh dfk">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <div class="md:flex md:justify-between">
+        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 mx-auto">
+          <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-400 tracking-wider uppercase">Resources</h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <li class="mb-4">
+                <a href="resources.html" class="text-base text-gray-300 hover:text-white">Learn More</a>
+              </li>
+              <li>
+                <a href="about.html" class="text-base text-gray-300 hover:text-white">About Us</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-400 tracking-wider uppercase">Follow us</h2>
+            <ul class="text-white font-medium">
+              <li class="mb-4">
+                <a href="about.html" class="text-base text-gray-300 hover:text-white">Github</a>
+              </li>
+              <li>
+                <a href="about.html" class="text-base text-gray-300 hover:text-white">Linkedln</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-400 tracking-wider uppercase">Legal</h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <li class="mb-4">
+                <a href="#" class="text-base text-gray-300 hover:text-white">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#" class="text-base text-gray-300 hover:text-white">Terms &amp; Conditions</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between">
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 Cesar's Portfolio™. All Rights
+          Reserved.
+        </span>
+        <div class="flex mt-4 sm:justify-center sm:mt-0">
+
+          <a href="about.html" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5 fa fa-google-plus">
+            <span class="sr-only">Google page</span>
+          </a>
+
+          <a href="about.html"
+            class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5 fa-brands fa-discord">
+            <span class="sr-only">Discord page</span>
+          </a>
+
+          <a href="about.html" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5 fa-brands fa-github">
+
+            <span class=" sr-only">GitHub account</span>
+          </a>
+          <a href="about.html"
+            class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5 fa fa-linkedin-square">
+
+            <span class="sr-only">Linkedln account</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <script src="https://kit.fontawesome.com/d02ec1b504.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</body>
+
+</html>

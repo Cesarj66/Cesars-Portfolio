@@ -1,0 +1,1293 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  scroll-behavior: smooth
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 16px;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+/* footer  */
+footer {
+  position: relative;
+  background-color: #001327;
+  height: auto;
+  font-family: 'Kumbh Sans', sans-serif;
+  padding-top: 50px;
+  color: #fff;
+}
+
+.footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-top h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+
+}
+
+.footer-top p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 13.5px;
+}
+
+.social-icons {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.social-icons li {
+  margin: 0 10px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.social-icons a i {
+  font-size: 1.1rem;
+  transition: .3s ease;
+}
+
+.social-icons a:hover i {
+  color: red;
+}
+
+.footer-bottom {
+  background: #181B1E;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 13.5px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+  opacity: 0.5;
+  font-weight: 250;
+}
+
+li,
+a,
+button {
+  font-family: "Monserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  /* color: #edf0f1; */
+  color: black;
+  text-decoration: none;
+}
+
+/* Navigation Bar Start */
+
+.relative:hover .absolute,
+.relative:hover .group-hover {
+  display: block;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 249px;
+  list-style: none;
+  white-space: nowrap;
+}
+
+
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  order: 2;
+
+}
+
+.nav-links li {
+  display: block;
+  padding: 0 12px;
+  list-style: none;
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 12px 0;
+  display: inline-block;
+  transition: all ease 0.3s;
+  font-size: 18px;
+}
+
+.nav-links li a:hover {
+  color: rgba(255, 255, 255, 0.208);
+
+}
+
+.menu-button-container {
+  display: flex;
+  justify-content: space-between;
+  order: 3;
+}
+
+
+.menu-button {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: black;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: white;
+  border: 2px solid black;
+
+}
+
+.menu-button-container a:nth-child(1) .menu-button {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: black;
+  border: 2px solid black;
+
+}
+
+
+.menu-button:hover {
+  background: rgba(45, 45, 45, 1);
+  color: white;
+  border: 2px solid rgba(48, 48, 48, 1);
+}
+
+.menu-button-container a:nth-child(1) .menu-button:hover {
+  background: black;
+  color: white;
+  border: 2px solid black;
+}
+
+/* Target the anchor tags within the ul that's within the dropdown div */
+div.z-10 ul li a {
+  display: block;
+  width: auto;
+  padding: 10px 8px;
+}
+
+/* Navigation Bar End */
+
+/* -----------------index.html start------------------- */
+
+
+/* ---section 1 Main page Start---*/
+.bg-center.bg-no-repeat.bg-gray-500.bg-blend-multiply {
+  background-size: cover;
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg");
+  max-height: 655px;
+}
+
+
+
+/* -----------------index.html end------------------- */
+
+/* ---Exercise Page Start--- */
+.exercise-h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.exercise-h2 {
+
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.exercise-p {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(80, 59, 29, 0.5);
+  transform: translate(10%, -200%)
+}
+
+.exercise-background-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/img/pushup.jpg");
+  background-size: cover;
+  padding: 230px;
+  position: relative;
+  overflow: hidden;
+}
+
+.exercise-background-col h2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  transform: translate(-20%, -45%);
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  color: white;
+  /* padding: 300px 300px 0px 300px; */
+  font-size: 48px;
+  max-width: 45%;
+  font-weight: bold;
+}
+
+/* ---title card shadow Start---*/
+#exer {
+  text-shadow: 2px 2px 4px rgba(80, 59, 29, 0.5);
+}
+
+exercise-background-col p,
+.exercise-background-col button {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  padding: 30px 30px 50px 30px;
+  font-size: 18px;
+  max-width: 70%;
+}
+
+.exercise-background-col button {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: black;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: white;
+  border: 2px solid black;
+}
+
+.exercise-background-col button:hover {
+  background: rgba(48, 48, 48, 1);
+  border: 2px solid rgba(48, 48, 48, 1);
+}
+
+.image-exer {
+  text-align: center;
+  position: relative;
+  width: 300px;
+  /* Set the width to match your image's width */
+  height: 300px;
+  /* Set the height to match your image's height */
+}
+
+.image-centering {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+.text-exer {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(45%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.0);
+  /* Semi-transparent background for text */
+  color: black;
+  text-align: center;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 20px;
+  opacity: 0;
+  /* Initially, text is hidden */
+  transition: opacity 0.3s ease;
+  /* Add a smooth transition effect */
+}
+
+.image-exer:hover img {
+  opacity: 0.7;
+  /* Change the image opacity on hover */
+}
+
+.image-exer:hover .text-exer {
+  opacity: 1;
+  /* Display the text on hover */
+}
+
+.inline {
+  display: inline-block;
+}
+
+#exer li {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  /* Adjust the padding to control the box size */
+  margin-top: 1px;
+  margin-bottom: 1px;
+  width: 270px;
+  position: relative;
+}
+
+#exer li::after {
+  content: '';
+  /* Empty content to create the pseudo-element */
+  position: absolute;
+  top: 0;
+  right: -16px;
+  /* Adjust this value to control the size of the chevron */
+  border-top: 22px solid transparent;
+  border-bottom: 23px solid transparent;
+  border-left: 16px solid black;
+  /* Adjust the size and color as needed */
+}
+
+#exer li a {
+  color: inherit;
+  /* Inherit the color from the parent */
+  text-decoration: none;
+  /* Remove underlines */
+}
+
+/* --- title card shadow End ---*/
+
+/* ---Supplements Page Start--- */
+
+.supplements-h1 {
+  font-size: 1.5em;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+
+}
+
+.supplements-h2,
+.supplements-p {
+  width: 100%;
+  /* Full width of the container */
+  text-align: center;
+  /* Center text horizontally */
+  margin: 0 auto;
+  /* Auto margins for horizontal centering */
+  display: block;
+  /* Ensures the element is a block-level element */
+}
+
+.supplements-h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  margin-top: 80px;
+
+}
+
+.supplements-h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  line-height: 25px;
+}
+
+.supplements-p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.supplements-background-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://codexpro.ai/blog/wp-content/uploads/2024/03/Impact-of-Code-Assessment-Platforms_-Enhancing-Technical-Skills-768x506.jpg");
+  background-size: cover;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+
+.supplements-background-row::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .5);
+  /* Fully opaque black */
+}
+
+/* Ensure content on the div is above the overlay */
+.supplements-background-row * {
+  position: relative;
+  z-index: 3;
+}
+
+.supplements-background-col h2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  padding: 30px 30px 0px 30px;
+  font-size: 48px;
+  max-width: 100%;
+}
+
+.supplements-background-col p {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  padding: 30px 30px 50px 30px;
+  font-size: 18px;
+  max-width: 70%;
+}
+
+/* --- format for supplements images --- */
+.sup-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* --- supplements-container --- */
+#fh5co-portfolio {
+  float: left;
+  width: 100%;
+  padding: 2em 4em;
+}
+
+#fh5co-portfolio p {
+  line-height: 25px;
+}
+
+@media screen and (max-width: 1200px) {
+  #fh5co-portfolio {
+    padding-left: 0;
+    padding-right: 0
+  }
+}
+
+#fh5co-portfolio .fh5co-portfolio-item {
+  float: left;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#fh5co-portfolio .fh5co-portfolio-item .fh5co-portfolio-description,
+#fh5co-portfolio .fh5co-portfolio-item .fh5co-portfolio-figure {
+  width: 50%
+}
+
+#fh5co-portfolio .fh5co-portfolio-item .fh5co-portfolio-figure {
+  background-repeat: no-repeat;
+  background-size: 125%;
+  background-color: #101735;
+  background-position: center center;
+  overflow: hidden
+}
+
+#fh5co-portfolio .fh5co-portfolio-item .fh5co-portfolio-description {
+  background: #fff;
+  padding: 4em;
+  line-height: 25px
+}
+
+@media screen and (max-width: 1200px) {
+  #fh5co-portfolio .fh5co-portfolio-item .fh5co-portfolio-description {
+    padding: 2em
+  }
+}
+
+#fh5co-portfolio .fh5co-portfolio-item .fh5co-portfolio-description h2 {
+  font-family: "Roboto Slab", arial, sans-serif;
+  font-size: 30px;
+  line-height: 34px;
+  font-weight: 300;
+}
+
+#fh5co-portfolio .fh5co-portfolio-item.fh5co-img-right .fh5co-portfolio-figure {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0
+}
+
+@media screen and (max-width: 768px) {
+  #fh5co-portfolio {
+    margin-bottom: 4em
+  }
+
+  #fh5co-portfolio .fh5co-portfolio-item {
+    display: block
+  }
+
+  #fh5co-portfolio .fh5co-portfolio-item .fh5co-portfolio-description,
+  #fh5co-portfolio .fh5co-portfolio-item .fh5co-portfolio-figure {
+    display: block;
+    width: 100%
+  }
+
+  #fh5co-portfolio .fh5co-portfolio-item .fh5co-portfolio-figure {
+    height: 400px
+  }
+
+  #fh5co-portfolio .fh5co-portfolio-item .fh5co-portfolio-description {
+    padding: 1em
+  }
+
+  #fh5co-portfolio .fh5co-portfolio-item.fh5co-img-right .fh5co-portfolio-figure {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    height: 400px
+  }
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* --- End Supplements-Container --- */
+
+
+
+/* ---title card shadow Start---*/
+#supp {
+  text-shadow: 2px 2px 4px rgba(80, 59, 29, 0.5);
+}
+
+supp-background-col p,
+.supp-background-col button {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  padding: 30px 30px 50px 30px;
+  font-size: 18px;
+  max-width: 70%;
+}
+
+.supp-background-col button {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: black;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: white;
+  border: 2px solid black;
+}
+
+.supp-background-col button:hover {
+  background: rgba(48, 48, 48, 1);
+  border: 2px solid rgba(48, 48, 48, 1);
+}
+
+.image-supp {
+  text-align: center;
+  position: relative;
+  width: 350px;
+  /* Set the width to match your image's width */
+  height: 300px;
+  /* Set the height to match your image's height */
+}
+
+.image-centering {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+.text-supp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(90%);
+  width: 100%;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.0);
+  /* Semi-transparent background for text */
+  color: white;
+  text-align: center;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 20px;
+  opacity: 0;
+  /* Initially, text is hidden */
+  transition: opacity 0.3s ease;
+  /* Add a smooth transition effect */
+}
+
+.image-supp:hover img {
+  opacity: 0.7;
+  /* Change the image opacity on hover */
+}
+
+.image-supp:hover .text-supp {
+  opacity: 1;
+  /* Display the text on hover */
+}
+
+.inline {
+  display: inline-block;
+}
+
+#supp li {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  /* Adjust the padding to control the box size */
+  margin-top: 1px;
+  margin-bottom: 1px;
+  width: 270px;
+  position: relative;
+}
+
+#supp li::after {
+  content: '';
+  /* Empty content to create the pseudo-element */
+  position: absolute;
+  top: 0;
+  right: -14px;
+  /* Adjust this value to control the size of the chevron */
+  border-top: 19px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 15px solid black;
+  /* Adjust the size and color as needed */
+}
+
+#supp li a {
+  color: inherit;
+  /* Inherit the color from the parent */
+  text-decoration: none;
+  /* Remove underlines */
+}
+
+/* --- title card shadow End ---*/
+
+/* ---Supplements Page End--- */
+
+/* ---Meal.html Page Start--- */
+.meal-h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.meal-h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center
+}
+
+.meal-h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  margin-left: 350px;
+  margin-right: 350px;
+  text-align: center;
+}
+
+.meal-h4 {
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.meal-background-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://fitnessvolt.com/wp-content/uploads/2022/06/3000-Calorie-Meal-Plan.jpg");
+  background-size: cover;
+  height: 750px;
+  position: relative;
+  overflow: hidden;
+}
+
+.meal-background-col h2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  padding: 30px 30px 0px 30px;
+  font-size: 48px;
+  max-width: 70%;
+}
+
+.meal-background-col img {
+  position: relative;
+  
+}
+
+.meal-background-col h4 {
+  margin-top: 20px;
+  margin-left: 40px;
+  text-align: center;
+}
+
+.meal-background-col p {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  padding: 30px 30px 50px 30px;
+  font-size: 18px;
+  max-width: 70%;
+}
+
+/* Show more btn */
+.moreInfo {
+  display: none;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin: 20px;
+  padding: 20px;
+}
+
+.moreBtn {
+
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* ------- Meal Images ------- */
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 300px;
+}
+
+.desc {
+  padding: 3% 7%;
+  height: 100%;
+  text-align: center;
+  overflow-y: hidden;
+  /* prevents text vertical overflow for cards */
+}
+
+.container-recipe {
+  display: flex;
+  flex-direction: row;
+  padding: 40px 15px 0px 15px;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ------- Meal Shadow Start ------- */
+#meal {
+  text-shadow: 2px 2px 4px rgba(80, 59, 29, 0.5);
+}
+
+meal-background-col p,
+.meal-background-col button {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  padding: 30px 30px 50px 30px;
+  font-size: 18px;
+  max-width: 70%;
+}
+
+.meal-background-col button {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: black;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: white;
+  border: 2px solid black;
+}
+
+.meal-background-col button:hover {
+  background: rgba(48, 48, 48, 1);
+  border: 2px solid rgba(48, 48, 48, 1);
+}
+
+.image-meal {
+  text-align: center;
+  position: relative;
+  width: 450px;
+  /* Set the width to match your image's width */
+  height: 300px;
+  /* Set the height to match your image's height */
+}
+
+.image-centering {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.text-meal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(90%);
+  width: 100%;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.0);
+  /* Semi-transparent background for text */
+  color: black;
+  text-align: center;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 20px;
+  opacity: 0;
+  /* Initially, text is hidden */
+  transition: opacity 0.3s ease;
+  /* Add a smooth transition effect */
+}
+
+.image-meal:hover img {
+  opacity: 0.5;
+  /* Change the image opacity on hover */
+}
+
+.image-meal:hover .text-meal {
+  opacity: 1;
+  /* Display the text on hover */
+}
+
+.inline {
+  display: inline-block;
+}
+
+/* ---Meal Page End--- */
+
+/* Resources.html Page Start */
+.resources-background-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/img/books.jpg");
+  background-size: cover;
+  height: 655px;
+  position: relative;
+  overflow: hidden;
+}
+
+.resources-background-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.resources-background-col h2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  padding: 30px 30px 0px 30px;
+  font-size: 48px;
+  max-width: 100%;
+}
+
+.resources-background-col p {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  padding: 30px 30px 50px 30px;
+  font-size: 18px;
+  max-width: 100%;
+}
+
+/* links for other websites */
+.options-container-row {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  width: 100%;
+}
+
+.options-container-col ul {
+  list-style: none;
+}
+
+.options-container-col h2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  color: black;
+  padding: 30px 0px 10px 0px;
+  font-size: 48px;
+
+}
+
+.options-container-col p,
+.options-container-col a {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  color: black;
+  padding: 40px 40px 60px 40px;
+  font-size: 18px;
+}
+
+.options-container-col a {
+  padding: 12px 25px;
+  background-color: black;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: white;
+  border: 2px solid black;
+}
+
+.options-container-col a:hover {
+  background: rgba(48, 48, 48, 1);
+  border: 2px solid rgba(48, 48, 48, 1);
+  text-decoration: underline;
+}
+
+
+/* Resources.html Page End */
+
+/* Tips.html Page Start */
+
+
+
+.tip-title {
+  background-color: #0c0354;
+  font-family: 'Kumbh Sans', sans-serif;
+  padding: 15px;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.tip-title h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3rem;
+}
+
+.tip-title p {
+  max-width: 1000px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 18px;
+}
+
+.tip-button {
+  height: 70px;
+  width: 150px;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 35px;
+  font-size: 24px;
+}
+
+#rand-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0c0354;
+  padding-bottom: 150px;
+  position: relative;
+  text-align: center;
+  /* height: 700px; */
+}
+
+
+#rand-gen {
+  max-width: 100%;
+  max-height: 600px;
+}
+
+#image-wrapper {
+  position: relative;
+  display: inline-block;
+  /* To make the container only as wide as the image */
+}
+
+
+#quote-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+  font-family: 'Candal';
+  font-size: 22px;
+  text-transform: uppercase;
+  font-size: 30px;
+  text-shadow: 2px 2px #131313;
+  background-color: rgba(255, 255, 255, 0.0);
+  /* Add a semi-transparent white background */
+  text-align: center;
+  padding-top: 450px;
+  /* Adjust padding as needed */
+  overflow: hidden;
+  /* Hide any text that overflows */
+  /*white-space: nowrap; /* Prevent text from wrapping */
+
+
+
+}
+
+/* Tips.html Page End */
+
+/* Workouttips.html Page Start */
+
+.workouttips-background-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/img/tips_header.jpg");
+  background-size: cover;
+  height: 655px;
+  position: relative;
+  overflow: hidden;
+}
+
+.workouttips-background-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.workouttips-background-col h2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  padding: 30px 30px 0px 30px;
+  font-size: 48px;
+  max-width: 100%;
+}
+
+.workouttips-background-col p {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  padding: 30px 30px 50px 30px;
+  font-size: 18px;
+  max-width: 100%;
+}
+
+.tipContainer {
+  position: relative;
+  display: inline-block;
+}
+
+
+.tipImage {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.tipImage img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.imgContainer {
+  position: relative;
+}
+
+.arrow-right,
+.arrow-left {
+  position: absolute;
+  width: 100px;
+  /* Adjust width as needed */
+  height: 100px;
+  /* Adjust height as needed */
+  background-image: url('img/arrow.png');
+  /* Set the path to your image */
+  background-size: cover;
+  /* Adjust how the image covers the button */
+  background-position: center;
+  /* Center the image within the button */
+  background-color: transparent;
+  border: none;
+  /* Remove default button border */
+  cursor: pointer;
+  /* Show cursor as pointer on hover */
+}
+
+.arrow-right {
+  /* right: 385px; */
+  top: 50%;
+  transform: translateY(-50%) translateX(280%);
+}
+
+.arrow-left {
+  top: 50%;
+  transform: scaleX(-1) translateY(-50%) translateX(380%);
+}
+
+.arrow-right:hover {
+  background-image: url('img/light-arrow.png');
+}
+
+.arrow-left:hover {
+  background-image: url('img/light-arrow.png');
+}
+
+.tipText {
+  max-width: 55%;
+  font-size: 20px;
+}
+
+.tipTitle {
+  padding: 6px;
+  font-size: 28px;
+}
+
+/* Workouttips.html Page End */
