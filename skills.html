@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    html {
+      font-family: 'Trebuchet MS', sans-serif
+    }
+  </style>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cesar's Portfolio</title>
+  <link rel="icon" href="/img/home/group24.svg">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&family=Montserrat:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+
+
+<body class="bg-gray-800">
+  <!-- Creates a navigation bar for the page and linking each html page together -->
+  <header class="bg-gray-900">
+    <nav
+      class="flex items-center justify-between bg-gray-900 w-full h-10 z-20 nav-links">
+      <div class="flex items-center justify-center mx-auto">
+        <button data-collapse-toggle="navbar-sticky" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:focus:ring-gray-600 ml-auto"
+          aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse ml-auto">
+          <div class="hidden w-full md:flex md:w-auto" id="navbar-sticky">
+            <ul
+              class="flex flex-col p-4 mt-96 font-medium border border-gray-900 rounded-lg bg-gray-900 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-gray-900 dark:bg-gray-900 dark:border-gray-700">
+              <li>
+                <a href="index.html"
+                  class="block py-2 px-3 text-gray-900 md:bg-transparent md:text-gray-900 md:p-0 dark:text-gray-900"
+                  aria-current="page">Home</a>
+              </li>
+              <li class="relative group">
+                <a href="projects.html"
+                  class="md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 md:dark:hover:bg-transparent">
+                  Projects
+                </a>
+              </li>
+              <li class="relative group">
+                <a href="skills.html"
+                  class="md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 md:dark:hover:bg-transparent">
+                  Skills
+                </a>
+              </li>
+              <li>
+                <a href="about.html"
+                  class="md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 md:dark:hover:bg-transparent">
+                  About Me
+                </a>
+              </li>
+              <li>
+                <a href="contact.html"
+                  class="md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 md:dark:hover:bg-transparent">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="skills-background-row">
+    <div class="skills-background-col">
+      <h2 id="skills-h2">Skills</h2>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <h2 class="skills-h2 text-gray-300">Programming Proficiency Levels</h2>
+  <canvas id="proficiencyChart"></canvas>
+
+  <script>
+    const ctx = document.getElementById('proficiencyChart').getContext('2d');
+    const proficiencyChart = new Chart(ctx, {
+      type: 'bar', // Chart type
+      data: {
+        labels: ['Python', 'C++', 'Java', 'HTML', 'CSS', 'Kotlin'], // X-axis labels
+        datasets: [{
+          label: 'Proficiency Level',
+          data: [6, 7, 4, 6, 5, 4, 10], // Y-axis values (adjust levels here)
+          backgroundColor: [
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 206, 86, 0.2)',
+            'rgba(75, 192, 192, 0.2)',
+            'rgba(153, 102, 255, 0.2)',
+            'rgba(255, 159, 64, 0.2)'
+          ],
+          borderColor: [
+            'rgba(255, 99, 132, 1)',
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 206, 86, 1)',
+            'rgba(75, 192, 192, 1)',
+            'rgba(153, 102, 255, 1)',
+            'rgba(255, 159, 64, 1)'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        plugins: {
+          legend: {
+            labels: {
+              color: 'lightgrey', // Changes the legend text color
+            }
+          }
+        },
+        scales: {
+          x: {
+            ticks: {
+              color: 'lightgrey', // Changes X-axis label text color
+            }
+          },
+          y: {
+            ticks: {
+              color: 'lightgrey', // Changes Y-axis label text color
+            },
+            title: {
+              display: true,
+              text: 'Proficiency Level (out of 10)',
+              color: 'lightgrey' // Changes Y-axis title text color
+            }
+          }
+        }
+      }
+    });
+  </script>
+  <hr>
+  <h2 style="margin-top: 80px;" class="skills-h2 text-gray-300">Technical Skills</h2>
+  <div class="skills-section ">
+    <div class="skills-column text-gray-300">
+      <h3><u>Languages</u></h3>
+      <ul>
+        <li>C++</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Kotlin</li>
+      </ul>
+    </div>
+    <div class="skills-column text-gray-300">
+      <h3><u>Tools & Frameworks</u></h3>
+      <ul>
+        <li>Pygame</li>
+        <li>Unreal Engine 5</li>
+        <li>Chart.js</li>
+        <li>Electron</li>
+        <li>AWS</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Non-Technical Skills Section -->
+  <h2 class="skills-h2 text-gray-300">Non-Technical Skills</h2>
+  <div class="skills-section">
+    <div class="skills-column text-gray-300">
+      <h3><u>Personal Skills</u></h3>
+      <ul>
+        <li>Problem-Solving</li>
+        <li>Creativity & Design</li>
+        <li>Learning & Adaptability</li>
+        <li>Communication</li>
+      </ul>
+    </div>
+    <div style="margin-bottom: 50px;" class="skills-column text-gray-300">
+      <h3><u>Project Management</u></h3>
+      <ul>
+        <li>Collaborating on group projects</li>
+        <li>Managing timelines and features</li>
+        <li>UI/UX design</li>
+        <li>Debugging complex issues</li>
+      </ul>
+    </div>
+  </div>
+
+
+
+      <!-- main footer -->
+    <footer>
+      <div class="mx-auto w-full max-w-screen-xl lg:py-8">
+        
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">Designed and developed by Cesar Jasso. CWID: 884792573
+          </span>
+          <div class="flex mt-4 sm:justify-center sm:mt-0">
+
+            <a href="https://discordapp.com/users/879850197184815225"
+              class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5 fa-brands fa-discord">
+              <span class="sr-only">Discord page</span>
+            </a>
+  
+            <a href="https://github.com/Cesarj66" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5 fa-brands fa-github">
+  
+              <span class=" sr-only">GitHub account</span>
+            </a>
+            <a href="https://www.linkedin.com/in/cesar-jasso-9852942a3/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+              class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5 fa fa-linkedin-square">
+  
+              <span class="sr-only">Linkedln account</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+      <script src="https://kit.fontawesome.com/d02ec1b504.js" crossorigin="anonymous"></script>
+      <script src="index.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+      <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>

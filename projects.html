@@ -2,12 +2,6 @@
 <html>
 
 <head>
-  <style>
-    html {
-      scroll-behavior: smooth
-    }
-  </style>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cesar's Portfolio</title>
@@ -24,7 +18,7 @@
   <!-- Creates a navigation bar for the page and linking each html page together -->
   <header class="bg-gray-900">
     <nav
-      class="flex items-center justify-between h-24 bg-gray-900 w-full z-20 top-0 start-0 border-b border-gray-900 dark:border-gray-900 nav-links">
+      class="flex items-center justify-between bg-gray-900 w-full z-20 nav-links">
       <div class="flex items-center justify-center mx-auto">
         <button data-collapse-toggle="navbar-sticky" type="button"
           class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:focus:ring-gray-600 ml-auto"
@@ -51,7 +45,7 @@
                 </a>
               </li>
               <li class="relative group">
-                <a href="exercises.html"
+                <a href="skills.html"
                   class="md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 md:dark:hover:bg-transparent">
                   Skills
                 </a>
@@ -63,7 +57,7 @@
                 </a>
               </li>
               <li>
-                <a href="resources.html"
+                <a href="contact.html"
                   class="md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 md:dark:hover:bg-transparent">
                   Contact
                 </a>
@@ -76,42 +70,42 @@
   </header>
 
 
-  <div class="supplements-background-row">
-    <div class="supplements-background-col">
-      <h2 class="supplements-h2 text-center mx-auto">Projects</h2>
+  <div class="projects-background-row">
+    <div class="projects-background-col">
+      <h2 class="projects-h2 text-center mx-auto">Projects</h2>
     </div>
   </div>
 
-  <h1 class="supplements-h1 text-gray-300">Here you'll find some of the projects I've worked on throughout the years.</h1>
+  <h1 class="projects-h1 text-gray-300">Here you'll find some of the projects I've worked on throughout the years.</h1>
 
   <div class="image-centering">
-    <div class="image-supp inline">
+    <div class="image-proj inline">
       <a href="#AI">
-        <img src="/img/AIHS.png" alt="Alien Invasion" style="width:350px; height: 300px;">
-        <div class="text-supp"><b>Space Invaders</b></div>
+        <img src="AIHS.png" alt="Alien Invasion" style="width:350px; height: 300px;">
+        <div class="text-proj"><b>Space Invaders</b></div>
       </a>
     </div>
 
-    <div class="image-supp inline">
+    <div class="image-proj inline">
       <a href="#ER">
-        <img src="/img/EasyRecipes.png" alt="EasyRecipes" style="width:350px; height: 300px;">
-        <div class="text-supp"><b>EasyRecipes</b></div>
+        <img src="EasyRecipes.png" alt="EasyRecipes" style="width:350px; height: 300px;">
+        <div class="text-proj"><b>EasyRecipes</b></div>
       </a>
     </div>
 
-    <div class="image-supp inline">
+    <div class="image-proj inline">
       <a href="#IM">
-        <img src="/img/IM.png" alt="Infinite Matrix"
+        <img src="IM.png" alt="Infinite Matrix"
           style="width:350px; height: 300px;">
-        <div class="text-supp"><b>Infinite Matrix</b></div>
+        <div class="text-proj"><b>Infinite Matrix</b></div>
       </a>
     </div>
 
-    <div class="image-supp inline">
+    <div class="image-proj inline">
       <a href="#CR">
         <img src="https://images.squarespace-cdn.com/content/v1/5cedd5e7c6e7df0001bbb67c/1564551973622-EE9YJORD9OFXPKW9NYKW/Banner_Video_Cover.jpg"
           alt="Crossy Road" style="width:350px; height: 300px;">
-        <div class="text-supp"><b>Crossy Road</b></div>
+        <div class="text-proj"><b>Crossy Road</b></div>
       </a>
     </div>
   </div>
@@ -119,9 +113,9 @@
   <div id="fh5co-portfolio">
     <div id="AI" class="fh5co-portfolio-item">
       <div class="fh5co-portfolio-figure"
-        style="background-image:url(/img/AlienInvasion.png);">
+        style="background-image:url(AlienInvasion.png);">
       </div>
-      <div class="fh5co-portfolio-description">
+      <div class="fh5co-portfolio-description bg-gray-900 text-gray-300">
         <h2>Space Invaders</h2><br>
         <p>
           This project marks a personal milestone as the first major programming endeavor and the very first video game I've ever created. 
@@ -137,13 +131,18 @@
   <div id="fh5co-portfolio">
     <div class="fh5co-portfolio-item">
       <div class="fh5co-portfolio-figure"
-        style="background-image:url(/img/EasyRecipes2.png);">
+        style="background-image:url(EasyRecipes.png);">
       </div>
       <div id="ER"></div>
-      <div class="fh5co-portfolio-description">
+      <div class="fh5co-portfolio-description bg-gray-900 text-gray-300">
         <h2>EasyRecipes</h2><br>
         <p>
-          EasyRecipes was my first venture into app development, and it served as an exciting and rewarding learning experience. The app allows users to enter and save their own recipes, complete with photos to make each dish visually appealing. Its clean and intuitive interface makes it easy to organize and access recipes, effectively functioning as a personalized digital recipe book.<br><br> This project introduced me to core development concepts, from creating user-friendly forms to managing data storage for saved recipes. It was a fun and inspiring way to combine my technical skills with a practical, everyday application.
+          EasyRecipes was my first venture into app development, and it served as an exciting and rewarding learning experience. 
+          The app allows users to enter and save their own recipes, complete with photos to make each dish visually appealing. 
+          Its clean and intuitive interface makes it easy to organize and access recipes, effectively functioning as a personalized 
+          digital recipe book.<br><br> This project introduced me to core development concepts, from creating user-friendly forms to 
+          managing data storage for saved recipes. It was a fun and inspiring way to combine my technical skills with a practical, 
+          everyday application.
         </p>
       </div>
     </div>
@@ -152,13 +151,20 @@
   <div id="fh5co-portfolio">
     <div class="fh5co-portfolio-item">
       <div class="fh5co-portfolio-figure"
-        style="background-image:url(/img/IM.png);">
+        style="background-image:url(IM.png);">
       </div>
       <div id="IM"></div>
-      <div class="fh5co-portfolio-description">
+      <div class="fh5co-portfolio-description bg-gray-900 text-gray-300">
         <h2>Infinite Matrix</h2><br>
         <p>
-          The Infinite Matrix game was my first introduction into Unreal Engine 5, a powerful and versatile game engine that allowed users to create immersive and engaging gameplay experiences. When I would see the scale of video games that were being made with Unreal Engine, I would always think that it was a level of game development that was years beyond my capabilities. I was extremely intmidated when my Game Development professor mentioned that we would be developing a game in Unreal Engine. After a few tutorials, it very quickly became clear to me that Unreal Engine was not some far-away concept that I would never be able to grasp. Even though this game is a very simple and basic game where you move through an infinite tube making sure not to run into the different shapes, I opened a door for me that I did not expect to have opened for me when I first registered for the course.
+          The Infinite Matrix game was my first introduction into Unreal Engine 5, a powerful and versatile game engine that allowed 
+          users to create immersive and engaging gameplay experiences. When I would see the scale of video games that were being made 
+          with Unreal Engine, I would always think that it was a level of game development that was years beyond my capabilities. I 
+          was extremely intmidated when my Game Development professor mentioned that we would be developing a game in Unreal Engine. 
+          After a few tutorials, it very quickly became clear to me that Unreal Engine was not some far-away concept that I would never 
+          be able to grasp. Even though this game is a very simple and basic game where you move through an infinite tube making sure 
+          not to run into the different shapes, I opened a door for me that I did not expect to have opened for me when I first registered 
+          for the course.
         </p>
       </div>
     </div>
@@ -167,98 +173,55 @@
   <div id="fh5co-portfolio">
     <div class="fh5co-portfolio-item">
       <div class="fh5co-portfolio-figure"
-        style="background-image:url(/img/CR.png);">
+        style="background-image:url(CR.png);">
       </div>
       <div id="CR"></div>
-      <div class="fh5co-portfolio-description">
+      <div class="fh5co-portfolio-description bg-gray-900 text-gray-300">
         <h2>Crossy Road</h2><br>
         <p>
-          This project marks a personal milestone as the first major programming endeavor and the very first video game I've ever created. 
-          Having played video games my entire life, the experience of transitioning from a player to a developer was both exciting and deeply meaningful.
-          Crafting gameplay mechanics, designing features like dynamic alien movement, and building a polished experience from scratch gave me a 
-          profound appreciation for the creative and technical work behind games. Now, I can proudly say I've programmed my own video game—a dream 
-          come true for someone who grew up immersed in gaming.
+          Crossy Road is a project I am currently working on, and it is a remake of the popular mobile game Crossy Road. This is by far the 
+          biggest project I have ever worked on, and it has been a huge learning experience for me. This game is also beig made in Unreal Engine
+          and it is a much more complex game than the Infinite Matrix game. This game requires much more resources than the previous games, and 
+          has even introduced me into 3D modeling and animation. I am very excited to see how this game will turn out and I am looking forward to
+          the challenges that it will bring.
         </p>
       </div>
     </div>
   </div>
+   <div class="clearfix"></div>
 
+  <!-- main footer -->
+    <footer>
+      <div class="mx-auto w-full max-w-screen-xl lg:py-8">
+        
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">Designed and developed by Cesar Jasso. CWID: 884792573
+          </span>
+          <div class="flex mt-4 sm:justify-center sm:mt-0">
+
+            <a href="https://discordapp.com/users/879850197184815225"
+              class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5 fa-brands fa-discord">
+              <span class="sr-only">Discord page</span>
+            </a>
   
-  <!-- Footer -->
-  <!-- main footer -->
-  <div class="clearfix"></div>
-  <!-- main footer -->
-  <footer class="gx ua ark asy aus chh ddh dfk">
-    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-      <div class="md:flex md:justify-between">
-        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 mx-auto">
-          <div>
-            <h2 class="mb-6 text-sm font-semibold text-gray-400 tracking-wider uppercase">Resources</h2>
-            <ul class="text-gray-500 dark:text-gray-400 font-medium">
-              <li class="mb-4">
-                <a href="resources.html" class="text-base text-gray-300 hover:text-white">Learn More</a>
-              </li>
-              <li>
-                <a href="about.html" class="text-base text-gray-300 hover:text-white">About Us</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h2 class="mb-6 text-sm font-semibold text-gray-400 tracking-wider uppercase">Follow us</h2>
-            <ul class="text-white font-medium">
-              <li class="mb-4">
-                <a href="about.html" class="text-base text-gray-300 hover:text-white">Github</a>
-              </li>
-              <li>
-                <a href="about.html" class="text-base text-gray-300 hover:text-white">Linkedln</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h2 class="mb-6 text-sm font-semibold text-gray-400 tracking-wider uppercase">Legal</h2>
-            <ul class="text-gray-500 dark:text-gray-400 font-medium">
-              <li class="mb-4">
-                <a href="#" class="text-base text-gray-300 hover:text-white">Privacy Policy</a>
-              </li>
-              <li>
-                <a href="#" class="text-base text-gray-300 hover:text-white">Terms &amp; Conditions</a>
-              </li>
-            </ul>
+            <a href="https://github.com/Cesarj66" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5 fa-brands fa-github">
+  
+              <span class=" sr-only">GitHub account</span>
+            </a>
+            <a href="https://www.linkedin.com/in/cesar-jasso-9852942a3/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+              class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5 fa fa-linkedin-square">
+  
+              <span class="sr-only">Linkedln account</span>
+            </a>
           </div>
         </div>
       </div>
-      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-      <div class="sm:flex sm:items-center sm:justify-between">
-        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 Cesar's Portfolio™. All Rights
-          Reserved.
-        </span>
-        <div class="flex mt-4 sm:justify-center sm:mt-0">
-
-          <a href="about.html" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5 fa fa-google-plus">
-            <span class="sr-only">Google page</span>
-          </a>
-
-          <a href="about.html"
-            class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5 fa-brands fa-discord">
-            <span class="sr-only">Discord page</span>
-          </a>
-
-          <a href="about.html" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5 fa-brands fa-github">
-
-            <span class=" sr-only">GitHub account</span>
-          </a>
-          <a href="about.html"
-            class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5 fa fa-linkedin-square">
-
-            <span class="sr-only">Linkedln account</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
   
   <script src="https://kit.fontawesome.com/d02ec1b504.js" crossorigin="anonymous"></script>
   <script src="index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
 
 </body>

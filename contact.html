@@ -2,27 +2,31 @@
 <html>
 
 <head>
+
+  </style>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cesar's Portfolio</title>
+  <link rel="icon" href="/img/home/group24.svg">
+  <link href="style.css" rel="stylesheet" type="text/css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&family=Montserrat:wght@500&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-800">
+
 
   <!-- Creates a navigation bar for the page and linking each html page together -->
   <header class="bg-gray-900">
     <nav
       class="flex items-center justify-between bg-gray-900 w-full z-20 nav-links">
-      <div class="flex items-center justify-center mx-auto">
+      <div class="flex items-center mx-auto">
         <button data-collapse-toggle="navbar-sticky" type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:focus:ring-gray-600 ml-auto"
+          class=" items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:focus:ring-gray-600 ml-auto"
           aria-controls="navbar-sticky" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -70,41 +74,52 @@
     </nav>
   </header>
 
-  <!-- Main page section-->
-  <section class="bg-center bg-no-repeat bg-gray-500 bg-blend-multiply ">
-    <div class="px-4 mx-auto max-w-screen-xl text-center  lg:py-40">
-      <img class="mx-auto" style="width: 220px; height: 290px; padding-bottom: 80px;" src="https://lh3.googleusercontent.com/wQyLyPphYv33h-qXMOBEarGEixiidINkWWXQ0gi_jT-e58iqSV-7ZnbBnXswCsCSEu_83gusqX-OiOmzAO472nfQCMOtHglMcwI=s1000" alt="Avatar">
-      <h1 class="mb-4 text-gray-300 lg:text-5xl"><a class="hover:underline"  href="https://www.youtube.com/watch?v=mYOOuLq_z1Q" target="_blank">"Not Even Stars Last Forever"<br> - Avenged Sevenfold</a></h1>
-    </div>
-  </section>
-  
-  <!-- Intro Section -->
-  <section class="flex items-center justify-center  font-poppins bg-gray-800 pt-[50px] pb-[50px]">
-    <!-- Adjust the pt-[100px] value to match the height of your navbar -->
-    <div class="max-w-4xl mx-auto px-4 lg:px-6 h-full flex flex-col justify-center">
-      <div class="px-4 text-center ">
-        <h2 class="pb-2 text-2xl font-bold md:text-4xl h-32 dark:text-gray-300">
-          Introduction
-        </h2>
-      </div>      
-      <p class="text-gray-400">My name is Cesar Jasso. I am a senior at CSUF majoring in Computer Science.
-        I will be graduating in the Spring of 2025. I never had thoughts of becoming a programmer, not even in my first year of college. I was always 
-        interested in technology and would disassemble electronics to see the parts that make them work, but I never thought of it as more than just 
-        curiosity. It wasn't until my second year of college that I took a programming class and I was hooked. I realized that programming was not 
-        some abstract concept, but a way to create something from nothing. It was like magic. I started to learn more about programming and I immediately
-        knew that I wanted to create programs of my own. That first programming class was the first time I was able to say that I created something that 
-        was entirely my own and I never looked back since.
+  <!-- Card -->
+  <div class="font-poppins  w-screen p-10">
+    <div class="text-center">
+      <p class="text-lg font-semibold text-gray-300 ">
+        Connect with Me!
       </p>
     </div>
+  </div>
+  <section class="grid justify-center font-poppins pb-[100px]">
+    <!-- Cesar Jasso -->
+    <div class="p-10 rounded-xl bg-gray-900 dark:text-gray-100">
+      <img src="about-img/linkedln_cesar.svg" alt=""
+        class="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square">
+      <div class="space-y-4 text-center divide-y dark:divide-gray-700">
+        <div class="my-2 space-y-1">
+          <h2 class="text-xl font-semibold sm:text-2xl">Cesar Jasso</h2>
+          <p class="px-5 text-xs sm:text-base dark:text-gray-400"></p>
+        </div>
+        <div class="flex justify-center pt-2 space-x-4 align-center">
+          <a rel="noopener noreferrer" href="https://github.com/Cesarj66" aria-label="GitHub"
+            class="p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-400 fa-brands fa-github" target="_blank">
+
+          </a>
+          <a rel="noopener noreferrer" href="https://discordapp.com/users/879850197184815225" aria-label="Discord"
+            class="p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-400 fa-brands fa-discord" target="_blank">
+
+          </a>
+          <a rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/cesar-jasso-9852942a3/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+            aria-label="Linkedin"
+            class="p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-400 fa fa-linkedin-square" target="_blank">
+          </a>
+        </div>
+      </div>
+    </div>
+
   </section>
 
+  <!-- main footer -->
   <!-- main footer -->
   <footer>
     <div class="mx-auto w-full max-w-screen-xl lg:py-8">
       
       <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
       <div class="sm:flex sm:items-center sm:justify-between">
-        <span class="text-sm text-gray-400 sm:text-center ">Designed and developed by Cesar Jasso. CWID: 884792573
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">Designed and developed by Cesar Jasso. CWID: 884792573
         </span>
         <div class="flex mt-4 sm:justify-center sm:mt-0">
 
@@ -126,12 +141,12 @@
       </div>
     </div>
   </footer>
- 
-  <!-- font awsome icons -->
+
   <script src="https://kit.fontawesome.com/d02ec1b504.js" crossorigin="anonymous"></script>
   <script src="index.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
+
 </body>
 
 </html>

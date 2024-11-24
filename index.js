@@ -76,3 +76,4 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // toggle visibility of item based on id
   accordion.toggle('accordion-example-heading-3');
+})
