@@ -96,12 +96,12 @@
   <script>
     const ctx = document.getElementById('proficiencyChart').getContext('2d');
     const proficiencyChart = new Chart(ctx, {
-      type: 'bar', // Chart type
+      type: 'bar',
       data: {
-        labels: ['Python', 'C++', 'Java', 'HTML', 'CSS', 'Kotlin'], // X-axis labels
+        labels: ['Python', 'C++', 'Java', 'HTML', 'CSS', 'Kotlin'],
         datasets: [{
           label: 'Proficiency Level',
-          data: [6, 7, 4, 6, 5, 4, 10], // Y-axis values (adjust levels here)
+          data: [6, 7, 4, 6, 5, 4, 10], 
           backgroundColor: [
             'rgba(255, 99, 132, 0.2)',
             'rgba(54, 162, 235, 0.2)',
@@ -125,24 +125,24 @@
         plugins: {
           legend: {
             labels: {
-              color: 'lightgrey', // Changes the legend text color
+              color: 'lightgrey', 
             }
           }
         },
         scales: {
           x: {
             ticks: {
-              color: 'lightgrey', // Changes X-axis label text color
+              color: 'lightgrey',
             }
           },
           y: {
             ticks: {
-              color: 'lightgrey', // Changes Y-axis label text color
+              color: 'lightgrey',
             },
             title: {
               display: true,
               text: 'Proficiency Level (out of 10)',
-              color: 'lightgrey' // Changes Y-axis title text color
+              color: 'lightgrey' 
             }
           }
         }

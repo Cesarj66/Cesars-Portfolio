@@ -12,10 +12,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <style>
-    /* Image Slider */
-    
-  </style>
 </head>
 
 <body class="bg-gray-800">
@@ -155,9 +151,9 @@
       currentIndex += direction;
 
       if (currentIndex >= totalImages) {
-        currentIndex = 0; // Loop back to the first image
+        currentIndex = 0; 
       } else if (currentIndex < 0) {
-        currentIndex = totalImages - 1; // Loop to the last image
+        currentIndex = totalImages - 1; 
       }
 
       // Hide all images
