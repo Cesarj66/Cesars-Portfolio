@@ -17,8 +17,7 @@
 <body class="bg-gray-800">
   <!-- Creates a navigation bar for the page and linking each html page together -->
   <header class="bg-gray-900">
-    <nav
-      class="flex items-center justify-between bg-gray-900 w-full z-20 nav-links">
+    <nav class="flex items-center justify-between bg-gray-900 w-full z-20 nav-links">
       <div class="flex items-center justify-center mx-auto">
         <button data-collapse-toggle="navbar-sticky" type="button"
           class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:focus:ring-gray-600 ml-auto"
@@ -38,13 +37,19 @@
                   class="block py-2 px-3 text-gray-900 md:bg-transparent md:text-gray-900 md:p-0 dark:text-gray-900"
                   aria-current="page">Home</a>
               </li>
-              <li class="relative group">
+              <!-- Dropdown for Projects -->
+              <li class="relative dropdown">
                 <a href="projects.html"
                   class="md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 md:dark:hover:bg-transparent">
                   Projects
                 </a>
+                <div class="dropdown-content">
+                  <a href="alien.html">Space Invaders</a>
+                  <a href="recipe.html">EasyRecipes</a>
+                  <a href="matrix.html">Infinite Matrix</a>
+                </div>
               </li>
-              <li class="relative group">
+              <li>
                 <a href="skills.html"
                   class="md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 md:dark:hover:bg-transparent">
                   Skills
@@ -80,114 +85,29 @@
 
   <div class="image-centering">
     <div class="image-proj inline">
-      <a href="#AI">
+      <a href="alien.html">
         <img src="AIHS.png" alt="Alien Invasion" style="width:350px; height: 300px;">
         <div class="text-proj"><b>Space Invaders</b></div>
       </a>
     </div>
 
     <div class="image-proj inline">
-      <a href="#ER">
+      <a href="recipe.html">
         <img src="EasyRecipes.png" alt="EasyRecipes" style="width:350px; height: 300px;">
         <div class="text-proj"><b>EasyRecipes</b></div>
       </a>
     </div>
 
     <div class="image-proj inline">
-      <a href="#IM">
+      <a href="matrix.html">
         <img src="IM.png" alt="Infinite Matrix"
           style="width:350px; height: 300px;">
         <div class="text-proj"><b>Infinite Matrix</b></div>
       </a>
     </div>
-
-    <div class="image-proj inline">
-      <a href="#CR">
-        <img src="https://images.squarespace-cdn.com/content/v1/5cedd5e7c6e7df0001bbb67c/1564551973622-EE9YJORD9OFXPKW9NYKW/Banner_Video_Cover.jpg"
-          alt="Crossy Road" style="width:350px; height: 300px;">
-        <div class="text-proj"><b>Crossy Road</b></div>
-      </a>
-    </div>
   </div>
 
-  <div id="fh5co-portfolio">
-    <div id="AI" class="fh5co-portfolio-item">
-      <div class="fh5co-portfolio-figure"
-        style="background-image:url(AlienInvasion.png);">
-      </div>
-      <div class="fh5co-portfolio-description bg-gray-900 text-gray-300">
-        <h2>Space Invaders</h2><br>
-        <p>
-          This project marks a personal milestone as the first major programming endeavor and the very first video game I've ever created. 
-          Having played video games my entire life, the experience of transitioning from a player to a developer was both exciting and deeply meaningful.
-          Crafting gameplay mechanics, designing features like dynamic alien movement, and building a polished experience from scratch gave me a 
-          profound appreciation for the creative and technical work behind games. Now, I can proudly say I've programmed my own video game—a dream 
-          come true for someone who grew up immersed in gaming.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div id="fh5co-portfolio">
-    <div class="fh5co-portfolio-item">
-      <div class="fh5co-portfolio-figure"
-        style="background-image:url(EasyRecipes.png);">
-      </div>
-      <div id="ER"></div>
-      <div class="fh5co-portfolio-description bg-gray-900 text-gray-300">
-        <h2>EasyRecipes</h2><br>
-        <p>
-          EasyRecipes was my first venture into app development, and it served as an exciting and rewarding learning experience. 
-          The app allows users to enter and save their own recipes, complete with photos to make each dish visually appealing. 
-          Its clean and intuitive interface makes it easy to organize and access recipes, effectively functioning as a personalized 
-          digital recipe book.<br><br> This project introduced me to core development concepts, from creating user-friendly forms to 
-          managing data storage for saved recipes. It was a fun and inspiring way to combine my technical skills with a practical, 
-          everyday application.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div id="fh5co-portfolio">
-    <div class="fh5co-portfolio-item">
-      <div class="fh5co-portfolio-figure"
-        style="background-image:url(IM.png);">
-      </div>
-      <div id="IM"></div>
-      <div class="fh5co-portfolio-description bg-gray-900 text-gray-300">
-        <h2>Infinite Matrix</h2><br>
-        <p>
-          The Infinite Matrix game was my first introduction into Unreal Engine 5, a powerful and versatile game engine that allowed 
-          users to create immersive and engaging gameplay experiences. When I would see the scale of video games that were being made 
-          with Unreal Engine, I would always think that it was a level of game development that was years beyond my capabilities. I 
-          was extremely intmidated when my Game Development professor mentioned that we would be developing a game in Unreal Engine. 
-          After a few tutorials, it very quickly became clear to me that Unreal Engine was not some far-away concept that I would never 
-          be able to grasp. Even though this game is a very simple and basic game where you move through an infinite tube making sure 
-          not to run into the different shapes, I opened a door for me that I did not expect to have opened for me when I first registered 
-          for the course.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div id="fh5co-portfolio">
-    <div class="fh5co-portfolio-item">
-      <div class="fh5co-portfolio-figure"
-        style="background-image:url(CR.png);">
-      </div>
-      <div id="CR"></div>
-      <div class="fh5co-portfolio-description bg-gray-900 text-gray-300">
-        <h2>Crossy Road</h2><br>
-        <p>
-          Crossy Road is a project I am currently working on, and it is a remake of the popular mobile game Crossy Road. This is by far the 
-          biggest project I have ever worked on, and it has been a huge learning experience for me. This game is also beig made in Unreal Engine
-          and it is a much more complex game than the Infinite Matrix game. This game requires much more resources than the previous games, and 
-          has even introduced me into 3D modeling and animation. I am very excited to see how this game will turn out and I am looking forward to
-          the challenges that it will bring.
-        </p>
-      </div>
-    </div>
-  </div>
+  
    <div class="clearfix"></div>
 
   <!-- main footer -->

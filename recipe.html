@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cesar's Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&family=Montserrat:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    /* Image Slider */
+    
+  </style>
+</head>
+
+<body class="bg-gray-800">
+
+  <!-- Creates a navigation bar for the page and linking each html page together -->
+  <header class="bg-gray-900">
+    <nav class="flex items-center justify-between bg-gray-900 w-full z-20 nav-links">
+      <div class="flex items-center justify-center mx-auto">
+        <button data-collapse-toggle="navbar-sticky" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:focus:ring-gray-600 ml-auto"
+          aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse ml-auto">
+          <div class="hidden w-full md:flex md:w-auto" id="navbar-sticky">
+            <ul
+              class="flex flex-col p-4 mt-96 font-medium border border-gray-900 rounded-lg bg-gray-900 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-gray-900 dark:bg-gray-900 dark:border-gray-700">
+              <li>
+                <a href="index.html"
+                  class="block py-2 px-3 text-gray-900 md:bg-transparent md:text-gray-900 md:p-0 dark:text-gray-900"
+                  aria-current="page">Home</a>
+              </li>
+              <!-- Dropdown for Projects -->
+              <li class="relative dropdown">
+                <a href="projects.html"
+                  class="md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 md:dark:hover:bg-transparent">
+                  Projects
+                </a>
+                <div class="dropdown-content">
+                  <a href="alien.html">Space Invaders</a>
+                  <a href="recipe.html">EasyRecipes</a>
+                  <a href="matrix.html">Infinite Matrix</a>
+                </div>
+              </li>
+              <li>
+                <a href="skills.html"
+                  class="md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 md:dark:hover:bg-transparent">
+                  Skills
+                </a>
+              </li>
+              <li>
+                <a href="about.html"
+                  class="md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 md:dark:hover:bg-transparent">
+                  About Me
+                </a>
+              </li>
+              <li>
+                <a href="contact.html"
+                  class="md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 md:dark:hover:bg-transparent">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Easy Recipe Section -->
+  <section class="flex items-center justify-center font-poppins bg-gray-800 pt-[50px] pb-[50px]">
+    <div class="max-w-4xl mx-auto px-4 lg:px-6 h-full flex flex-col justify-center">
+      <div class="text-center">
+        <h2 class=" text-2xl font-bold md:text-4xl h-10 dark:text-gray-300">
+          Easy Recipes
+        </h2>
+      </div>
+
+      <!-- Image Slider Section -->
+      <div class="slider-container">
+        <div class="slider-images">
+          <img src="recipe1.png" alt="Recipe 1">
+        </div>
+        <div class="slider-images">
+          <img src="recipe2.png" alt="Recipe 2">
+        </div>
+        <div class="slider-images">
+          <img src="recipe3.png" alt="Recipe 3">
+        </div>
+
+        <!-- Next and Previous Buttons -->
+        <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+        <button class="next" onclick="changeImage(1)">&#10095;</button>
+      </div>
+
+      <p class="text-gray-400">EasyRecipes was my first venture into app development, and it served as an exciting and rewarding learning experience. 
+        The app allows users to enter and save their own recipes, complete with photos to make each dish visually appealing. 
+        Its clean and intuitive interface makes it easy to organize and access recipes, effectively functioning as a personalized 
+        digital recipe book. This project introduced me to core development concepts, from creating user-friendly forms to 
+        managing data storage for saved recipes. It was a fun and inspiring way to combine my technical skills with a practical, 
+        everyday application.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Footer -->
+  <footer>
+    <div class="mx-auto w-full max-w-screen-xl lg:py-8">
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between">
+        <span class="text-sm text-gray-400 sm:text-center">Designed and developed by Cesar Jasso. CWID: 884792573</span>
+        <div class="flex mt-4 sm:justify-center sm:mt-0">
+          <a href="https://discordapp.com/users/879850197184815225"
+            class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5 fa-brands fa-discord">
+            <span class="sr-only">Discord page</span>
+          </a>
+          <a href="https://github.com/Cesarj66"
+            class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5 fa-brands fa-github">
+            <span class="sr-only">GitHub account</span>
+          </a>
+          <a href="https://www.linkedin.com/in/cesar-jasso-9852942a3/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+            class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5 fa fa-linkedin-square">
+            <span class="sr-only">LinkedIn account</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Font Awesome icons -->
+  <script src="https://kit.fontawesome.com/d02ec1b504.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    let currentIndex = 0;
+
+    function changeImage(direction) {
+      const images = document.querySelectorAll('.slider-images');
+      const totalImages = images.length;
+
+      currentIndex += direction;
+
+      if (currentIndex >= totalImages) {
+        currentIndex = 0; // Loop back to the first image
+      } else if (currentIndex < 0) {
+        currentIndex = totalImages - 1; // Loop to the last image
+      }
+
+      // Hide all images
+      images.forEach((img, index) => {
+        img.style.display = index === currentIndex ? 'block' : 'none';
+      });
+    }
+
+    // Initialize slider
+    changeImage(0);
+  </script>
+</body>
+
+</html>
